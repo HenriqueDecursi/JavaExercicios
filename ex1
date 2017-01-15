@@ -1,0 +1,75 @@
+/*
+		 * Uma loja tem um cesto cheio de meias, mas a loja só pode vender meias
+		 * aos pares e do mesmo tamanho. Desenvolver um código/algoritmo que
+		 * recebe a quantidade de meias e o tamanho delas e que devolva a
+		 * quantidade máxima de pares que podem ser vendidos.
+		 * 
+		 * Formato de entrada: - Primeira linha irá indicar quantas meias, n,
+		 * existem na pilha; - Segunda linha irá conter n tamanhos das meias
+		 * separados por espaço, c0 c1 c2 ...;
+		 * 
+		 * Formato de saída: - Imprimir o total de pares existentes na pilha.
+		 * 
+		 * Condições: 1 <= n <= 100 1 <= ci <= 100
+		 * 
+		 * Exemplo de entrada: 9 10 20 20 10 10 30 50 10 20
+		 * 
+		 * Exemplo de saída: 3
+		 * 
+		 * ----- ----- ----- ----- ----- -----
+		 */
+     
+     String i;
+
+		i = JOptionPane.showInputDialog(null, "Insira a quantidade de meias:");
+
+		int n = 0;
+		n = Integer.parseInt(i);
+
+		int cont = 0;
+		int resp = 0;
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+// do{
+		// avalia n
+		if ((1 <= n) && (n <= 100)) {
+			
+			int ci[] = new int[n];
+
+			int x = ci[0];
+
+			// laço para preencher array
+			for (int j = 0; j < ci.length; j++) {
+				String a = JOptionPane.showInputDialog(null, "Insira o tamanho do par entre \n numeração de 1-100: " + (j + 1));
+				int b = Integer.parseInt(a);
+				System.out.println("B - " + b);
+
+				// avalia num da array e insere
+				if ((1 <= b) && (b <= 100)) {
+					ci[j] = b;
+				
+				
+				}
+				//compara com o valor atual
+				if(ci[j] == x){	
+					cont++;
+				System.out.println(ci[j] + " - " + cont);
+				} else {
+					x = ci[j];
+				}
+
+			}
+			JOptionPane.showMessageDialog(null,
+					"Quantidade de pares que possam ser vendidos é de: " + cont + "cont - " + cont);
+		}else{
+			JOptionPane.showMessageDialog(null,
+					"Você deve digitar um valor entre 1 e 100!");
+			
+			
+		}
+//while();	
+	}
+}
