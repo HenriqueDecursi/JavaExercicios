@@ -1,0 +1,32 @@
+
+/*
+É necessário viajar da cidade C1 até Cn e não existe um caminho direto entre C1 e Cn.
+Mas há cidades C2, C3, ..., Cn-1 tal que existem N1 rotas da Cidade C1 até Cn, e Ni rotas de Ci até Ci+1 
+sendo i=0 para n-1 e rotas de qualquer outra C1 até Cj sendo j != i+1.
+Encontre o número total de rotas que podem ser tomadas saindo de C1 para chegar a Cn.
+
+Obs.:
+Deve-se de passar por todas as cidades Ci para i=1 até n-1 em ordem numerica para chegar a Cn;
+Para cada Ci, Ci+1 há apenas Ni rotas que podem ser tomadas.
+
+Formato de entrada:
+- A primeira linha contém um inteiro T, significando o número de T de casos de testes que seguem.
+- Cada caso de teste tem 2 linhas: A primeira linha contém um inteiro N (o número de cidades); o segundo contém N-1 
+inteiros (separados por espaço) onde o i-ésimo inteiro denota o número de rotas, Ni da cidade Ti até Ti+1.
+
+Formato de Saída:
+- Imprimir o número total de rotas de C1 até Cn
+
+Condições:
+1 <= T <= 1000
+2 < N <= 100
+1 <= Ni <= 1000
+
+Exemplo de entrada:
+1
+4
+2 2 2
+
+Exemplo de saída:
+8
+*/
